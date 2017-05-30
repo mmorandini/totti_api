@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+u1 = User.create!(name: 'Has', email: 'has@has.com', username: 'has', image: 'http://fillmurray.com/200/200')
+u2 = User.create!(name: 'Hor', email: 'hor@hor.com', username: 'hor', image: 'http://fillmurray.com/300/300')
+u3 = User.create!(name: 'Mat', email: 'mat@mat.com', username: 'mat', image: 'http://fillmurray.com/400/400')
+
+p1= u1.posts.create!(body: 'Hello, I love Totti')
+p2= u2.posts.create!(body: 'Hello, I dont like Totti')
+p3= u3.posts.create!(body: 'Hello, I am in love with Totti')
